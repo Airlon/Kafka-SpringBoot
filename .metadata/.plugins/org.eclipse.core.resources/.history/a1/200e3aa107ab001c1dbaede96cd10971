@@ -1,0 +1,32 @@
+package com.student.kafkaproducer.eventos;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.Producer;
+
+public class ProducerEvento {
+	
+	private final Producer<String, String> producer;
+
+	public ProducerEvento() {
+		producer = criarProducer();
+	}
+	
+	private Producer<String, String> criarProducer() {
+		if(producer != null) {
+			return producer;
+		}
+		
+		Properties properties = new Properties();
+		properties.put("bootstrap.servers", "localhost:9092");
+        properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        properties.put("serializer.class", "kafka.serializer.DefaultEncoder");
+		
+		return null;
+	}
+	
+	public void executar() {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package com.student.kafkaproducer.eventos;
+
+public class ProducerEvento {
+
+	public ProducerEvento() {
+		
+	}
+}

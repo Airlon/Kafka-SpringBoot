@@ -1,0 +1,21 @@
+package com.student.kafkaproducer;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.student.kafkaproducer.eventos.ProducerEvento;
+
+@SpringBootApplication
+public class KafkaProducerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(KafkaProducerApplication.class, args);
+	
+	}
+	
+	private void iniciar() {
+		ProducerEvento produtor = new ProducerEvento();
+		produtor.executar();
+	}
+
+}

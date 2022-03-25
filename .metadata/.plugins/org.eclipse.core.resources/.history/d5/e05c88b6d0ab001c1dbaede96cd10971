@@ -1,0 +1,13 @@
+package com.student.kafka.consumer;
+
+public class ConsumidorEvento {
+	
+	public ConsumidorEvento() {
+		
+	}
+	
+	public void executar() {
+		
+	}
+
+}

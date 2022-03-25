@@ -1,0 +1,21 @@
+package com.student.kafka.consumer;
+
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+
+public class ConsumidorEvento {
+	
+	private KafkaConsumer<String, String> consumer;
+	
+	public ConsumidorEvento() {
+		
+	}
+	
+	private KafkaConsumer<String, String> criarConsumer(){
+		return null;
+	}
+	
+	public void executar() {
+		
+	}
+
+}
